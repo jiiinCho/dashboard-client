@@ -9,11 +9,7 @@ export const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box
-      display='grid'
-      gridTemplateColumns='repeat(12, 1fr)'
-      gridTemplateRows='repeat(8, 12vh)'
-    >
+    <Box display='grid' gridTemplateColumns='repeat(12, 1fr)'>
       <Box
         gridColumn='span 8'
         gridRow='span 3'
