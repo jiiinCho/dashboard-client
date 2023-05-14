@@ -127,7 +127,7 @@ export const Sidebar = () => {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        height: '100vh',
+        height: '100%',
         top: 0,
         bottom: 0,
         backgroundColor,
