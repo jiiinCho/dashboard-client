@@ -28,7 +28,7 @@ export const ProjectCard = ({
     <Box
       flex={1}
       border={`1px solid ${colors.grey[300]}`}
-      p={3}
+      p={2}
       borderRadius='8px'
       m={1}
       sx={{ backgroundColor }}
@@ -54,15 +54,15 @@ export const ProjectCard = ({
       >
         <Box display='flex'>
           <Box
-            flexDirection='row'
+            display='flex'
             justifyContent='center'
             alignItems='center'
             mr={1}
           >
             <img
               alt='profile-user'
-              width='42px'
-              height='42px'
+              width='32px'
+              height='32px'
               src={`../../assets/user.jpg`}
               style={{ borderRadius: '50%' }}
             />
@@ -75,8 +75,8 @@ export const ProjectCard = ({
           >
             <img
               alt='profile-user'
-              width='42px'
-              height='42px'
+              width='32px'
+              height='32px'
               src={`../../assets/user.jpg`}
               style={{ borderRadius: '50%' }}
             />
@@ -89,8 +89,8 @@ export const ProjectCard = ({
           >
             <img
               alt='profile-user'
-              width='42px'
-              height='42px'
+              width='32px'
+              height='32px'
               src={`../../assets/user.jpg`}
               style={{ borderRadius: '50%' }}
             />
