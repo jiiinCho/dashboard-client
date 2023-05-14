@@ -12,7 +12,7 @@ export const Dashboard = () => {
     <Box
       display='grid'
       gridTemplateColumns='repeat(12, 1fr)'
-      gridTemplateRows='repeat(7, 11vh)'
+      gridTemplateRows='repeat(7, 12vh)'
     >
       <Box
         gridColumn='span 8'
@@ -41,7 +41,17 @@ export const Dashboard = () => {
       >
         <TaskStatistics />
       </Box>
-      <Box gridColumn='span 12' p={3}>
+      <Box
+        gridColumn='span 12'
+        p={3}
+        display={{
+          xs: 'none',
+          sm: 'none',
+          md: 'none',
+          lg: 'none',
+          xl: 'block',
+        }}
+      >
         <ProjectList />
       </Box>
     </Box>
