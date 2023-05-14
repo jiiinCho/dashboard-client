@@ -8,7 +8,7 @@ type ProgressCircleProps = {
 
 export const ProgressCircle = ({
   progress = 0.75,
-  size = '75',
+  size = '60',
 }: ProgressCircleProps) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
