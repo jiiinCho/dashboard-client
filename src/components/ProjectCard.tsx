@@ -43,7 +43,7 @@ export const ProjectCard = ({
           <MoreVertSharpIcon />
         </IconButton>
       </Box>
-      <Typography variant='h6' mt={2}>
+      <Typography variant='h6' mt={1}>
         {projectName}
       </Typography>
       <Box
