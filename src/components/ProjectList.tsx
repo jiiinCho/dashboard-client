@@ -15,6 +15,7 @@ export const ProjectList = () => {
         <ProjectCard projectName='Finches' updates={3} progress={0.25} />
         <ProjectCard projectName='Woodpecker ' updates={1} progress={0.45} />
         <ProjectCard projectName='Olive tree' updates={0} progress={0.86} />
+        <ProjectCard projectName='Vulture' updates={0} progress={0.86} />
       </Box>
     </>
   );
