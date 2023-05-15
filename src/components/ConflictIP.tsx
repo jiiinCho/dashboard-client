@@ -95,11 +95,27 @@ export const ConflictIP = () => {
         </Box>
       </Button>
     ),
-    [backgroundColor, backgroundColorNonSelected, colors.grey, selected]
+    [
+      backgroundColor,
+      backgroundColorNonSelected,
+      borderColor,
+      colors.grey,
+      selected,
+    ]
   );
 
   return (
-    <Box mb={4}>
+    <Box
+      mb={4}
+      sx={{
+        display: {
+          sm: 'none',
+          md: 'none',
+          lg: 'none',
+          xl: 'block',
+        },
+      }}
+    >
       <DashboardHeader title='IP conflicts' />
       <Box
         my={2}
