@@ -72,7 +72,7 @@ export const ConflictLog = () => {
       <>
         {users.map(({ key, name }, i) => (
           <Box
-            py={2}
+            py={1}
             key={key}
             display='flex'
             alignItems='center'
