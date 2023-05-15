@@ -1,12 +1,12 @@
-import { Box, IconButton, useTheme } from '@mui/material';
-import { useContext } from 'react';
-import { ColorModeContext, tokens } from 'src/theme';
+import { Box, IconButton, useTheme } from "@mui/material";
+import { useContext } from "react";
+import { ColorModeContext, tokens } from "src/theme";
 
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
-import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
-import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 export const Topbar = () => {
   const theme = useTheme();
@@ -16,15 +16,15 @@ export const Topbar = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
-        justifyContent: 'flex-end',
-        p: 1,
+        display: "flex",
+        justifyContent: "flex-end",
+        p: 0.5,
         borderBottom: `1px solid ${colors.grey[400]}`,
       }}
     >
-      <Box display='flex'>
+      <Box display="flex">
         <IconButton onClick={colorMode.toggleColorMode}>
-          {theme.palette.mode === 'dark' ? (
+          {theme.palette.mode === "dark" ? (
             <DarkModeOutlinedIcon />
           ) : (
             <LightModeOutlinedIcon />
