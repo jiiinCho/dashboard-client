@@ -50,7 +50,7 @@ export const ConflictLog = () => {
         return;
       }
 
-      const users = (data as any[]).map(({ name }) => {
+      const users = (data as any[]).slice(0, 6).map(({ name }) => {
         const key = uuid(8);
 
         return {
@@ -88,10 +88,20 @@ export const ConflictLog = () => {
             >
               {key}
             </Typography>
-            <Typography color={colors.grey[100]} variant='body1' px={2}>
+            <Typography
+              color={colors.grey[100]}
+              variant='body1'
+              px={2}
+              display={{ xs: 'none', md: 'none', lg: 'block', xl: 'block' }}
+            >
               |
             </Typography>
-            <Typography color={colors.grey[100]}>{name}</Typography>
+            <Typography
+              color={colors.grey[100]}
+              display={{ xs: 'none', md: 'none', lg: 'block', xl: 'block' }}
+            >
+              {name}
+            </Typography>
           </Box>
         ))}
       </>

@@ -9,7 +9,7 @@ export const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
   return (
     <Grid container flex={1}>
-      <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
+      <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
         <Grid container direction='column'>
           <Grid item width='100%'>
             <Box
@@ -68,7 +68,7 @@ export const Dashboard = () => {
         </Grid>
       </Grid>
 
-      <Grid item lg={4} xl={4}>
+      <Grid item md={4} lg={4} xl={4}>
         <Grid container borderLeft={`1px solid ${colors.grey[400]}`}>
           <Grid item width='100%' height='calc(100vh - 48px)'>
             <Box p={2}>

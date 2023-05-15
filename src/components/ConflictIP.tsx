@@ -59,7 +59,7 @@ export const ConflictIP = () => {
         }}
       >
         <Box
-          py={1}
+          py={0.5}
           display='flex'
           alignItems='center'
           justifyContent='flex-start'
@@ -111,7 +111,7 @@ export const ConflictIP = () => {
         display: {
           sm: 'none',
           md: 'none',
-          lg: 'none',
+          lg: 'block',
           xl: 'block',
         },
       }}
